@@ -170,7 +170,6 @@ print(probf)
 probf.to_csv('post_int_prob/outcome_p_pnb.csv', index=False)
 
 #---N_PNB interventions-------------------------------------------------------- 
-#distribution identified : Cauchy
 #Change distribution
 np.random.seed(42)
 #X['K.PNB_new'] = np.where(X['K.PNB'] > -10,np.random.randint(-40, -10),X.shape[0])
@@ -193,7 +192,6 @@ n_pnb = pd.DataFrame(n_pnb, columns = ['N.PNB'])
 n_pnb.columns
 print(n_pnb)
 n_pnb.to_csv('int_dist/n_pnb.csv', index=False)
-
 import joblib
 # load the model
 filename ='finalized_xgb_model.sav'
@@ -211,7 +209,6 @@ print(probf)
 probf.to_csv('post_int_prob/outcome_n_pnb.csv', index=False)
 
 #---Household dependency ratio intervention-----------------------------------------
-#Distribution identified: Laplace 
 np.random.seed(45)
 #X['K.PNB_new'] = np.where(X['K.PNB'] > -10,np.random.randint(-40, -10),X.shape[0])
 X_new = X.copy()
@@ -256,7 +253,6 @@ print(probf)
 probf.to_csv('post_int_prob/outcome_hh_dep.csv', index=False)
 
 #---Labor intervention---------------------------------------------
-#Sistribution identified: dagum 
 import random
 #intervention: replace all non behavioral with values between min and -10
 #Change distribution
@@ -527,7 +523,6 @@ probf = pd.DataFrame(probf, columns = ['Class'])
 print(probf)
 probf.to_csv('post_int_prob/outcome_linf.csv', index=False)
 
-
 #-----household interventions-----------
 np.random.seed(42)
 #X['K.PNB_new'] = np.where(X['K.PNB'] > -10,np.random.randint(-40, -10),X.shape[0])
@@ -567,7 +562,6 @@ probf = model.predict(X_new)
 probf = pd.DataFrame(probf, columns = ['Class'])
 print(probf)
 probf.to_csv('post_int_prob/outcome_hhc.csv', index=False)
-
 
 #-----K and soil slope interventions ----------------------------------
 np.random.seed(42)
@@ -812,8 +806,7 @@ probf = model.predict(X_new)
 probf = pd.DataFrame(probf, columns = ['Class'])
 print(probf)
 probf.to_csv('post_int_prob/outcome_sh_hh_ls.csv', index=False)
-   
-   
+      
 #---All interventions combined interventions ----------------------------------
 np.random.seed(42)
 #X['K.PNB_new'] = np.where(X['K.PNB'] > -10,np.random.randint(-40, -10),X.shape[0])

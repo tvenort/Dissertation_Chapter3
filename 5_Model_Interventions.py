@@ -5,9 +5,6 @@ Created on Wed Mar  8 22:29:12 2023
 
 @author: taishavenort
 """
-#Code example
-#https://bagheri365.github.io/blog/Tour-of-Machine-Learning-Algorithms-for-Multiclass-Classification/
-#https://towardsdatascience.com/top-machine-learning-algorithms-for-classification-2197870ff501
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import RandomizedSearchCV, KFold, cross_val_score, train_test_split

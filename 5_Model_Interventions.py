@@ -116,7 +116,7 @@ print(k_pnb)
 k_pnb.to_csv('int_dist/k_pnb.csv', index=False)
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -154,7 +154,7 @@ p_pnb.columns
 print(p_pnb)
 p_pnb.to_csv('int_dist/p_pnb.csv', index=False)
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -193,7 +193,7 @@ n_pnb.columns
 print(n_pnb)
 n_pnb.to_csv('int_dist/n_pnb.csv', index=False)
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -237,7 +237,7 @@ print(hh_dr)
 hh_dr.to_csv('int_dist/hh_dr.csv', index=False)
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -274,7 +274,7 @@ print(hh_labor)
 hh_labor.to_csv('int_dist/hh_labor.csv', index=False)
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -314,7 +314,7 @@ dr.to_csv('int_dist/int_dist_river.csv', index=False)
 #UA
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -354,7 +354,7 @@ drd.to_csv('int_dist/int_dist_roads.csv', index=False)
 #UA
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -392,7 +392,7 @@ slope.to_csv('int_dist/soil_slope.csv', index=False)
 #UA
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -430,7 +430,7 @@ Input_intensity.to_csv('int_dist/Input_intensity.csv', index=False)
 #UA
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -473,7 +473,7 @@ X_new['K.PNB'] = to_replace_with
 X_new['K.PNB'].hist()
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -508,7 +508,7 @@ X_new['Distance.to.roads'] = to_replace_with
 X_new['Distance.to.roads'].hist()
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -548,7 +548,7 @@ X_new['Household.dependency.ratio'] = to_replace_with
 X_new['Household.dependency.ratio'].hist()
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -594,7 +594,7 @@ X_new['K.PNB'] = to_replace_with
 X_new['K.PNB'].hist()
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -640,7 +640,7 @@ X_new['K.PNB'] = to_replace_with
 X_new['K.PNB'].hist()
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -716,7 +716,7 @@ X_new['Household.dependency.ratio'].hist()
 # X_new['Distance.to.roads'].hist()
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -792,7 +792,7 @@ X_new['Distance.to.roads'] = to_replace_with
 X_new['Distance.to.roads'].hist()
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
@@ -868,7 +868,7 @@ X_new['K.PNB'] = to_replace_with
 X_new['K.PNB'].hist()
 #Fitting new X distribution in model
 import joblib
-# load the model
+# load the saved model
 filename ='finalized_xgb_model.sav'
 model = joblib.load(open(filename, 'rb'))
 #new_y_distribution = model.predict(X_new)  # X with the new distribution or predict_proba
